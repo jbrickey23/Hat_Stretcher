@@ -1,50 +1,37 @@
 # Hat_Stretcher — durable engineering context
 
-_Last initialized: 2026-10-08_
+_Last reconciled: 2026-10-21_
 
-## Problem statement
-Pulling a damp, medium-weight felt hat blank down a #51 block to a full 5.75-inch crown is difficult; felt stiffens during handling and bunches around the crown break cord. The user wants mechanical leverage to assist stretching, without distorting or marring the felt.
+## Goal
+Make manual hat blocking easier by securely but gently gripping damp felt and, only if needed, assisting a downward stretch over the crown break. Work within existing mounting setup; avoid excessive clamping or stretching force and preserve usable brim.
 
-## Confirmed user-provided setup
-- Millinery Warehouse medium-weight felt blank.
-- #51 block, 5.75-inch target height.
-- Roughly 5 inches of material below break cord, **needed for brim**; no significant sacrificial amount available.
-- A 1-inch rotating block post in a 2×12 base with 90° and approximately 30° holes. Both orientations allow rotation; neither locks.
-- Two existing heavy-duty tarp clips with about 5 mm mouth/opening. Clip stayed locked yet felt slipped out. Interlocking tooth orientations differ; surface marking is a concern.
-- Wide flat-jaw locking sheet-metal Vise-Grips owned (same as or very close to the IRWIN 8R style discussed). Reported smooth, no serrations. Do not keep asking user which tool they own.
+## Confirmed equipment and constraints
+- Millinery Warehouse medium-weight felt blank; #51 crown block, target 5.75-inch height.
+- ~5 inches below break cord is needed for finished brim; do not assume sacrificial material.
+- Existing 1-inch hat-block post rotates in 90° or ~30° hole in a 2×12 base, without rotation lock.
+- Clearance is an observed problem: gripping tool protrudes below felt, requiring a higher block and stable working platform.
+- Repeated Vise-Grip clamping/unclamping is awkward.
+- Wide flat-jaw locking sheet-metal Vise-Grips similar to IRWIN 8R, with smooth metal contact (reported). Two tarp clips (~5 mm mouth) are owned but slipped while fully locked.
+- MyLifeUNIT canvas stretching pliers with rubberized, relatively broad jaws, built-in return spring, purchased and tested; user reported they worked great with no observed marring and enough holding force to pull hard, potentially enough to tear felt. Their nominal width is only modestly greater than Vise-Grips; don't treat width as a blocker or assume shortening needed.
+- Bambu Lab X1C for optional PLA jaw adapters.
 
-## Decided direction
-Integrate locking pliers into a future pivoted or linked pull arm. The operator rotates the hat, moves gripper into position, locks it onto one localized section and pulls down via lever while steaming/working that region. One movable gripper preferred to leaving multiple clips attached, pending experimentation.
+## Decisions / design direction
+- Canvas stretching pliers are **current lead**, based on observed performance and quick squeeze/release ergonomics.
+- Use them unmodified in a full blocking session before adding mechanisms.
+- Existing Vise-Grips with flat PLA spreading inserts remain a functioning backup. Wood and PLA allowed enough grip to stretch material. PLA showed slight marks reportedly removable with treatment, but nose-first steel jaw contact concentrates load at the leading edge. Any next PLA shoe should address load distribution and reliable attachment to the pliers, not simply add pad area.
+- Optional (not committed): spring return (already on canvas pliers), simple flip-over handle latch for hands-free steam/massage, pivoted lever arm pulling toward floor. Design only in response to real workflow findings; preserve easy release and limit overload.
+- Rubber liner candidates were researched (1/16 in smooth natural gum rubber ~50A, nonmarking neoprene ~50–65A, silicone). Neoprene 65A Amazon listing was considered suitable for a test, **but no completed rubber liner trial is recorded**. Do not imply rubber is required.
+- Don't buy or engineer alternative sheet-metal pliers unless the canvas pliers expose limitations.
 
-Phase 1 is **grip first**: evaluate replaceable, wide, non-marring jaw interfaces on the existing pliers, independent of the lever. Do not design the lever until grip works.
+## Failure and safety interpretation
+A reshaped felt body tore at the crown break along a pre-existing tear / sweatband stitch perforations during strong pulling. This is **not evidence that gripping jaws initiated the tear**; it also does not establish the load was safe. Do not derive a safe tensile force from it. A cord fully seated at the break can limit material feed from crown to brim, so assess blocking procedure as well as strength.
 
-## Liner candidates (NOT tested/approved)
-- Smooth natural gum rubber, approximately Shore A 50, ~1/16 in (1.6 mm) thick.
-- Smooth nonmarking neoprene, Shore A 50–60, ~1/16 in (1.6 mm).
-- Smooth silicone (possible alternative).
-- TPU 95A printed liners are a later option, not presumed superior for grip or nap protection.
+## Side topic: general hatmaking / reed ferrules
+- User has #85 plastic sweatband reed, treated nominally as ~0.85 mm, actual diameter not measured in this discussion.
+- Ferrule candidate: Albion Alloys MBT12 1.2 mm OD × 1.0 mm ID brass microtube (0.1 mm wall), cut into ~8–10 mm sleeves, after checking actual reed fit, deburring and testing retention/comfort. This is a suggested low-cost substitute, **not a tested/approved ferrule**.
+- Alternative stainless size with nominal 1.0 mm OD and 0.1 mm wall would give 0.8 mm ID and is too small for a nominal 0.85 mm reed.
+- A separate blocking workflow was discussed: complete drying/inspection, appropriate conservative pouncing based on felt composition, brim cutting, reeded sweatband installation, crown and brim shaping, finishing. Exact wool/fur composition was not established, and specific pouncing grit should not be treated as universally validated.
+- These hatmaking side topics are contextual notes, not active gripper priorities.
 
-## Jaw geometry candidates (NOT tested)
-A. Flat smooth faces with gently rounded perimeter edges (first test).
-B. Very shallow convex contact surface to accommodate variation (may concentrate force).
-C. Fine rounded ribs only if smooth surfaces fail (possible impressions).
-
-Observe jaw contact and grip under load; a fully engaged locking mechanism doesn't prove the jaw has maintained normal pressure. Felt may compress under load and steam. Do not assume any material guarantees nonmarking.
-
-## Safety / engineering principles
-- Start with mild hand tension; test scraps before applying leverage. Use a scale if useful to document slip threshold.
-- Assess dry and steamed/wet felt and nap after drying, not just immediate marks.
-- Mount liners so they cannot shear or peel away.
-- Verify pull alignment doesn't pry jaws apart; use a controlled pivot/linkage rather than unspecified handle attachment.
-- Eventually include a positive stop, quick release and rotation restraint if needed.
-- Do not treat the break cord as an unlimited-force anchor. Pulling below a fully secured break cord may mainly stretch brim-side felt rather than advance crown material.
-
-## Prior ideas not selected
-- Tarp clip: experimentally inadequate grip and likely marking.
-- Multiple pre-attached clips: possible alternative, currently not preferred.
-- Wrapping felt around a bar: may use too much of the required brim and leave creases.
-- Commercial canvas stretcher pliers: wide contact but usually require continuous hand squeeze.
-- Purpose-built compact screw parallel clamp: alternative if Vise-Grip liners cannot meet needs.
-
-## Next engineering question
-Find a removable way to attach thin, non-marring high-friction liner samples to wide smooth Vise-Grip jaws, then test retention, slip, felt marking, edge-pressure lines, and liner shear on scrap of the actual felt.
+## Guiding design principles
+Hands-on evidence outranks initial design assumptions. Keep the mechanism simple. Make grip fast, comfortable and non-marring. Test the completed blocking workflow, note clearance/hand fatigue, and avoid adding leverage merely to maximize force. Verify any marks after drying and distinguish structural failure elsewhere from gripper failure.
