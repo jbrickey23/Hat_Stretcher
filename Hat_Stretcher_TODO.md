@@ -1,16 +1,24 @@
-# Hat_Stretcher — open tasks
+# Hat_Stretcher — tasks
 
-## Active
-- [ ] **HS-001 — Characterize existing Vise-Grip jaw contact.** Document jaw width/depth and pressure contact (without asking user to reidentify the known pliers). Check whether under compression the contact is broad or concentrated at an edge.
-- [ ] **HS-002 — Test smooth removable liners.** Prepare ~1/16-inch gum rubber and nonmarking neoprene; flat faces with radiused exposed edges. Ensure liners do not slide on steel. Compare on damp felt under incremental hand loads.
-- [ ] **HS-003 — Document outcomes.** Slip threshold if measured, release/retention behavior, transfer, nap damage, compression lines immediately and after drying. Record photos and whether usable brim is compromised.
-- [ ] **HS-004 — Iterate if necessary.** Only after baseline: test shallow convex pad or alternative compliant layer; consider weak texture/ribs last. If Vise-Grip jaws cannot deliver, revisit compact screw-driven parallel jaw grip.
+_Last reconciled: 2026-10-21_
 
-## Deferred until grip passes
-- [ ] **HS-005 — Gripper attachment.** Determine pivot/clevis or short linkage load path that does not pry clamp open or interfere with lock/release.
-- [ ] **HS-006 — Bench/base lever geometry.** Measure 2×12 placement, workbench edge, available swing and downward stroke; assess 30° and 90° post orientations. Evaluate adjustable mechanical advantage, stop and quick release.
-- [ ] **HS-007 — Rotation management.** Test whether post must temporarily lock during offset pulls.
-- [ ] **HS-008 — Blocking procedure.** Test whether tensioning below provisional break cord advances crown felt or only pulls brim material; adjust sequence.
+## Active priority
+- [ ] **HS-009 — Full blocking trial with unmodified canvas stretching pliers.** Assess repeated repositioning, fatigue, grip, felt marks after drying, working clearance, control at crown break and whether hands-free holding is actually needed. Initial grip/no-marring test already positive.
+- [ ] **HS-010 — Resolve support height / clearance.** Determine practical safe way to raise and stabilize existing 2×12 post/block assembly to accommodate the gripping tool; measure only what is needed.
+- [ ] **HS-011 — Decide simplest next mechanism after trial.** No modification if hand pulling is sufficient; otherwise investigate quick flip latch and/or pivoted lever, with positive stop and quick release.
 
-## Reconciliation convention
-Update Context for decisions and constraints, Test Log for direct observations, this TODO for open items. Commit together when practicable. Never promote an untested material/design hypothesis to confirmed status.
+## Vise-Grip alternate path
+- [x] **HS-001 — Preliminary contact characterization.** Nose-first / edge-biased jaw loading observed with flat inserts; document precise geometry only if returning to Vise-Grip development.
+- [ ] **HS-002 — Optional liner comparison.** Wood and PLA were already tested; rubber (gum/neoprene/silicone) remains untested and is not a prerequisite.
+- [ ] **HS-003 — Finish surface verification.** Record marks and recovery after complete drying for any candidate.
+- [ ] **HS-004 — PLA V2 if needed.** Improve distribution away from leading edge, add secure removable jaw attachment, test on felt.
+- [ ] **HS-005 — Gripper-to-lever load path (conditional).** Avoid prying jaws apart; allow pivoting, easy release.
+- [ ] **HS-006 — Lever geometry (conditional).** Base/bench pivot, clearance, controlled stroke, mechanical stops; do not overdrive felt.
+- [ ] **HS-007 — Rotation constraint (conditional).** Check if 1-inch freely rotating post needs temporary restraint during off-axis pull.
+- [ ] **HS-008 — Crown break / cord sequence.** Establish that controlled pull works the crown over the break rather than only stretching usable brim; avoid pulling on already perforated/repaired bodies as force benchmarks.
+
+## Side topics, not active design blockers
+- [ ] Verify #85 reed measured diameter and test MBT12 brass microtube as DIY ferrule, including retained joint and no sharp edges.
+- [ ] Select appropriate pouncing method only after establishing felt fiber and finish.
+
+Record direct observations in Test Log; distinguish them from suggestions. Reconcile changes to Context and README after decisions.
